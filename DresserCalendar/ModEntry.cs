@@ -51,11 +51,12 @@ internal sealed class ModEntry : Mod
             // Find all calendars in the farmhouse.
             foreach (Furniture furniture in Game1.player.currentLocation.furniture)
             {
-                if (furniture.QualifiedItemId == "(F)1402") // Calendar item id
+                if (furniture.QualifiedItemId == "(F)1402") // Calendar item id.
                 {
                     Vector2 playerLocation = new Vector2(Game1.player.StandingPixel.X, Game1.player.StandingPixel.Y);
                     Vector2 cursorLocation = e.Cursor.AbsolutePixels;
                     Monitor.LogOnce($"Calendar found, boundingBox: {furniture.boundingBox.Value}", LogLevel.Debug);
+
                     // Check whether
                     // 1. the cursor is hovering over the calendar, and
                     // 2. there is a tile between the player and the calendar.
@@ -68,6 +69,7 @@ internal sealed class ModEntry : Mod
                         Helper.Input.Suppress(e.Button);
                         // Open the calendar.
                         Game1.activeClickableMenu = new Billboard();
+                        
                         Monitor.Log($"Player location: {playerLocation}", LogLevel.Debug);
                         Monitor.Log($"Cursor location: {cursorLocation}", LogLevel.Debug);
                         Monitor.Log("Calendar showed", LogLevel.Info);
