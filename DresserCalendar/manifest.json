@@ -1,8 +1,8 @@
 {
     "Name": "Dresser Calendar",
     "Author": "tastytypist",
-    "Version": "1.0.0",
-    "Description": "Allows you to open a calendar placed behind a dresser.",
+    "Version": "1.0.1",
+    "Description": "Allows you to open a calendar placed behind a furniture.",
     "UniqueID": "TastyTypist.DresserCalendar",
     "EntryDll": "DresserCalendar.dll",
     "MinimumApiVersion": "4.0.8",
