@@ -44,11 +44,11 @@ internal sealed class ModEntry : Mod
     {
         // Check whether
         // 1. a game has been loaded and the player is able to interact,
-        // 2. the player is currently in their farmhouse, and
+        // 2. the player is currently in a valid location for placing furniture, and
         // 3. the `action` button is pressed.
-        if (Context.IsPlayerFree && Game1.player.currentLocation is FarmHouse && e.Button.IsActionButton())
+        if (Context.IsPlayerFree && Game1.player.currentLocation is DecoratableLocation && e.Button.IsActionButton())
         {
-            // Find all calendars in the farmhouse.
+            // Find all calendars in the location.
             foreach (Furniture furniture in Game1.player.currentLocation.furniture)
             {
                 if (furniture.QualifiedItemId == "(F)1402") // Calendar item id.
