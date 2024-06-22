@@ -4,11 +4,11 @@
 behind a furniture.
 
 ## Demo
-![A player is able to interact with a calendar placed behind a furniture](demo/demo.gif)
+![A player is able to interact with a calendar placed behind a furniture](demo.gif)
 
 ## Install
 1. Install the latest version of [SMAPI](https://smapi.io).
-2. Dowload this mod from the [release page](https://github.com/tastytypist/dresser-calendar/releases).
+2. Download this mod from the [release page](https://github.com/tastytypist/DresserCalendar/releases).
 3. Extract and place its contents in the game's `Mods` directory.
 4. Run the game using SMAPI.
 
